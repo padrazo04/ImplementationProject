@@ -12,9 +12,10 @@ public interface IRoomMGT {
 	
 	public int registerNewRoom(RoomDetails roomDetails);
 	
-	public int amendRoom(int idRoom, RoomDetails roomDetails);
+//	public int amendRoom(int idRoom, RoomDetails roomDetails);
 	
-	public int deleteRoom(int idRoom);
+//	public int deleteRoom(int idRoom);
 	
 //	public int registerIncidence(int idRoom, IncidenceDetails incidenceDetails);
+	
 }

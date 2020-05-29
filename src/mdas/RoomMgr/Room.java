@@ -51,7 +51,7 @@ public class Room {
 	}
 	
 	public void setLocation(String location) {
-		this.name = location;
+		this.location = location;
 	}
 	
 	public List<String> getResources() {
@@ -60,5 +60,15 @@ public class Room {
 	
 	public void setResources(List<String> resources) {
 		this.resources = resources;
+	}
+	
+	public String toString() {
+		String infoRoom = "ID: " + this.getId() + "\n";
+		infoRoom += "Name: " + this.getName() + "\n";
+		infoRoom += "Capacity: " + this.getCapacity() + "\n";
+		infoRoom += "Location: " + this.getLocation() + "\n";
+		infoRoom += "Resources: " + this.getResources() + "\n";
+		
+		return infoRoom;
 	}
 }

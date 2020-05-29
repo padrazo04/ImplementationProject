@@ -1,10 +1,15 @@
 package mdas.RoomMgr;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RoomManager implements IRoomMGT{
 
 	private List<Room> rooms;
+	
+	public RoomManager() {
+		this.rooms = new ArrayList<Room>();
+	}
 	
 	public List<Room> getRooms() {
 		return rooms;
@@ -15,18 +20,17 @@ public class RoomManager implements IRoomMGT{
 	}
 	
 	public int registerNewRoom(RoomDetails roomDetails) {
-		// TODO Auto-generated method stub
+		Room room = new Room(this.rooms.size(), roomDetails.name, roomDetails.capacity, roomDetails.location, roomDetails.resources);
+		
+		this.rooms.add(room);
+		
 		return 0;
 	}
 
-	public int amendRoom(int idRoom, RoomDetails roomDetails) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int deleteRoom(int idRoom) {
-		// TODO Auto-generated method stub
-		return 0;
+	public void showAllRooms() {
+		for(Room room : this.rooms) {
+			System.out.println(room);
+		}
 	}
 
 }
