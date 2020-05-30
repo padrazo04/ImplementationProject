@@ -1,5 +1,5 @@
-idStudent;name;username;password;email;degree;
-1;Carlos Freire Caballero;frcac;123;frcac@uco.es;Computer Science;
-2;Alicia Zamora Martín;zamaa;1234;zamaa@uco.es;Compter Science;
-3;Angel Cañuelo Ortiz;caora;12345;caora@uco.es;Biologia;
-4;Antonio Sanchez Moscoso;samoa;1;samoa@uco.es;Mecanico;
+name;username;password;email;degree
+Carlos Freire Caballero;frcac;123;frcac@uco.es;Computer Science
+Alicia Zamora Martín;zamaa;1234;zamaa@uco.es;Compter Science
+Angel Cañuelo Ortiz;caora;12345;caora@uco.es;Biologia
+Antonio Sanchez Moscoso;samoa;1;samoa@uco.es;Mecanico

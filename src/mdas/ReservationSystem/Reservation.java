@@ -1,5 +1,6 @@
 	package mdas.ReservationSystem;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -22,6 +23,13 @@ public class Reservation {
 	public Reservation(int id, int bookerStudent, int roomReserved, 
 			List<String> resourcesNeeded, int numberStudents, 
 			String subject, Date dateReservation) {
+		this.setId(id);
+		this.setBookerStudent(bookerStudent);
+		this.setRoomReserved(roomReserved);
+		this.setResourcesNeeded(resourcesNeeded);
+		this.setNumberStudents(numberStudents);
+		this.setSubject(subject);
+		this.setDateReservation(dateReservation);
 	}
 
 	public int getId() {
@@ -78,6 +86,21 @@ public class Reservation {
 
 	public void setDateReservation(Date dateReservation) {
 		this.dateReservation = dateReservation;
+	}
+	
+	public String toString() {
+		String infoReservation = "ID: " + this.getId() + "\n";
+		infoReservation += "Booker Student: " + this.getBookerStudent() + "\n";
+		infoReservation += "Room Reserved: " + this.getRoomReserved() + "\n";
+		infoReservation += "Number of Students: " + this.getNumberStudents() + "\n";
+		infoReservation += "Subject: " + this.getSubject() + "\n";
+		
+		SimpleDateFormat dayAndMonth = new SimpleDateFormat("dd-MM");
+		infoReservation += "Date of Reservation: " + dayAndMonth.format(this.getDateReservation()) + "\n";
+		
+		infoReservation += "Resources Needed: " + this.getResourcesNeeded() + "\n";
+		
+		return infoReservation;
 	}
 	
 }

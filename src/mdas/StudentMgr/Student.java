@@ -13,6 +13,15 @@ public class Student {
 	private String password;
 	
 	private String degree;
+	
+	public Student(int id, String name, String username, String email, String password, String degree) {
+		this.setId(id);
+		this.setName(name);
+		this.setUsername(username);
+		this.setEmail(email);
+		this.setPassword(password);
+		this.setDegree(degree);
+	}
 
 	public int getId() {
 		return id;
@@ -60,6 +69,13 @@ public class Student {
 
 	public void setDegree(String degree) {
 		this.degree = degree;
+	}
+	
+	public String toString() {
+		String studentInfo = "Username: " + this.getUsername() + "\n";
+		studentInfo += "Password: " + this.getPassword() + "\n";
+		
+		return studentInfo;
 	}
 
 }

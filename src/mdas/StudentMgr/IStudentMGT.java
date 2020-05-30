@@ -6,5 +6,5 @@ public interface IStudentMGT {
 	
 //	public int createPenalty(int idStudent, int idIncidence);
 	
-	public int loadStudents(String studentFile);
+	public int loadStudents(String studentFile) throws Exception;
 }

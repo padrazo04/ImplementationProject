@@ -8,6 +8,12 @@ public class Admin {
 	
 	private String password;
 	
+	public Admin(int id, String username, String password) {
+		this.setId(id);
+		this.setUsername(username);
+		this.setPassword(password);
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -31,6 +37,13 @@ public class Admin {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public String toString() {
+		String adminInfo = "Username: " + this.getUsername() + "\n";
+		adminInfo += "Password: " + this.getPassword() + "\n";
+		
+		return adminInfo;
 	}
 
 }

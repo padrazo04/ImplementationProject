@@ -22,6 +22,10 @@ public class Room {
 		this.setResources(resources);
 	}
 	
+//	public Room(Room room) {
+//		this(room.getId(), room.getName(), room.get)
+//	}
+
 	public int getId() {
 		return this.id;
 	}

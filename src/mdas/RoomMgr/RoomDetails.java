@@ -1,5 +1,6 @@
 package mdas.RoomMgr;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RoomDetails {
@@ -12,7 +13,9 @@ public class RoomDetails {
 	
 	public List<String> resources;
 	
-	public RoomDetails() {}
+	public RoomDetails() {
+		this.resources = new ArrayList<String>();
+	}
 	
 	public RoomDetails(RoomDetails rd) {
 		this.name = rd.name;
